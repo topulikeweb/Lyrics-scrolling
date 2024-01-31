@@ -45,15 +45,15 @@ let dom = {
  * 如果没有任何一句歌词找到，则返回-1
  */
 function findIndex () {
-  let curTime = dom.audio.currentTime
-  for (let i = 1; i < lrcData.length + 1; i++) {
-    if (lrcData[i - 1].time < curTime < lrcData[i].time) {
-      return i - 1
+  let curTime = dom.audio.currentTime;
+  for (let i = 1; i < lrcData.length; i++) {
+    if (lrcData[i - 1].time <= curTime && curTime < lrcData[i].time) {
+      return i - 1;
     }
   }
-  // 没找到，则说明到了最后了
-  return lrcData.length - 1
+  return lrcData.length - 1;
 }
+
 
 /**
  * 创建歌词元素
