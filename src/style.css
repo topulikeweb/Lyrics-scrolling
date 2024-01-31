@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    color: #666;
+    text-align: center;
+    overflow: hidden;
+}
+
+.player-container {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+.container {
+    padding-top: 60px; /* 为播放器腾出空间 */
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: white;
+}
+
+.container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container ul li {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+}
+
+.container ul li.active {
+    color: blue;
+    transform: scale(1.2);
+}
+
+.floating-menu {
+    position: fixed;
+    top: 70px;
+    right: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+
+.floating-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.floating-menu ul li {
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.menu-button:hover + .floating-menu,
+.floating-menu:hover {
+    display: block;
+}
