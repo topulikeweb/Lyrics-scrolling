@@ -11,7 +11,7 @@ html, body {
     color: #666;
     text-align: center;
     overflow: hidden;
-    background-image: url('assets/bg2.jpg'); /* 更新路径以匹配您的文件结构 */
+    background-image: url('assets/bg3.jpg'); /* 更新路径以匹配您的文件结构 */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,8 +31,8 @@ html, body {
     height: 100vh; /* 使用视口高度确保填满整个屏幕 */
     width: 100%;
     overflow: auto;
-    background-color: rgba(255, 255, 255, 0.85);
-    opacity: 0.85;
+    background-color: rgba(255, 255, 255, 0.75);
+    opacity: 0.75;
     border-radius: 30px;
 }
 
