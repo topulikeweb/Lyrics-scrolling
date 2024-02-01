@@ -23,7 +23,7 @@ html, body {
 
 .container {
     position: relative;
-    padding-top: 60px; /* 为播放器腾出空间 */
+    padding-bottom: 60px; /* 为播放器腾出空间 */
     height: 100%;
     width: 100%;
     overflow: auto;
