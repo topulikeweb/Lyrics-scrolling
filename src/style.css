@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    color: #666;
+    text-align: center;
+    overflow: hidden;
+    background-image: url('assets/bg3.jpg'); /* 更新路径以匹配您的文件结构 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.player-container {
+    position: fixed;
+    bottom: 0; /* 放置在页面底部 */
+    left: 0;
+    width: 100%; /* 宽度占满整个视口宽度 */
+    z-index: 100;
+}
+
+.container {
+    position: relative;
+    padding-bottom: 100px; /* 增加底部内边距以留出空间给播放器控件 */
+    height: 100vh; /* 使用视口高度确保填满整个屏幕 */
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.75);
+    opacity: 0.75;
+    border-radius: 30px;
+}
+
+.container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container ul li {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: calc(1rem + 1vw); /* 字体大小根据视口宽度调整 */
+}
+
+.container ul li.active {
+    color: blue;
+    transform: scale(1.2);
+}
+
+#languageSelector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
+}

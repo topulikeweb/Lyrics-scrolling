@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>歌词滚动效果</title>
-    <link rel="stylesheet" href="./src/css/style.css">
-    <script src="./src/lyric/lyric.js"></script>
-    <script src="./src/lyric/main.js" type="module"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/main.js" type="module"></script>
 </head>
-
 <body>
-<div class="box">
-    <audio controls src="./src/MP3/time.mp3"></audio>
-    <div class="container">
-        <ul class="lrc-list"></ul>
-    </div>
+<div class="player-container">
+    <audio controls src="src/MP3/Ensemble for Polaris.mp3"></audio>
 </div>
 
-</body>
+<div class="lyric-language-selector">
+    <select id="lyricLanguage">
+        <option value="cn">中文</option>
+        <option value="jp">日本語</option>
+        <option value="en">English</option>
+        <option value="ru">русский язык</option>
+    </select>
+</div>
 
+<div class="container">
+    <ul class="lrc-list"></ul>
+</div>
+</body>
 </html>
