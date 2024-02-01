@@ -11,6 +11,10 @@ html, body {
     color: #666;
     text-align: center;
     overflow: hidden;
+    background-image: url('../bg.jpg'); /* 确保路径正确 */
+    background-size: cover; /* 背景图片覆盖整个视口 */
+    background-position: center; /* 背景图片居中显示 */
+    background-repeat: no-repeat; /* 背景图片不重复 */
 }
 
 .player-container {
@@ -27,7 +31,9 @@ html, body {
     height: 100%;
     width: 100%;
     overflow: auto;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.85); /* 设置背景颜色和透明度 */
+    opacity: 0.85; /* 设置透明度为 85% */
+    border-radius: 30px;
 }
 
 .container ul {
@@ -40,6 +46,7 @@ html, body {
     height: 30px;
     line-height: 30px;
     padding: 0 10px;
+    font-size: calc(1rem + 1vw); /* 字体大小会根据视口宽度变化 */
 }
 
 .container ul li.active {
