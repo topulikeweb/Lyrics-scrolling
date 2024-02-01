@@ -11,28 +11,28 @@ html, body {
     color: #666;
     text-align: center;
     overflow: hidden;
-    background-image: url('../bg.jpg'); /* 确保路径正确 */
-    background-size: cover; /* 背景图片覆盖整个视口 */
-    background-position: center; /* 背景图片居中显示 */
-    background-repeat: no-repeat; /* 背景图片不重复 */
+    background-image: url('assets/bg2.jpg'); /* 更新路径以匹配您的文件结构 */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .player-container {
     position: fixed;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0; /* 放置在页面底部 */
+    left: 0;
+    width: 100%; /* 宽度占满整个视口宽度 */
     z-index: 100;
 }
 
 .container {
     position: relative;
-    padding-bottom: 60px; /* 为播放器腾出空间 */
-    height: 100%;
+    padding-bottom: 100px; /* 增加底部内边距以留出空间给播放器控件 */
+    height: 100vh; /* 使用视口高度确保填满整个屏幕 */
     width: 100%;
     overflow: auto;
-    background-color: rgba(255, 255, 255, 0.85); /* 设置背景颜色和透明度 */
-    opacity: 0.85; /* 设置透明度为 85% */
+    background-color: rgba(255, 255, 255, 0.85);
+    opacity: 0.85;
     border-radius: 30px;
 }
 
@@ -46,7 +46,7 @@ html, body {
     height: 30px;
     line-height: 30px;
     padding: 0 10px;
-    font-size: calc(1rem + 1vw); /* 字体大小会根据视口宽度变化 */
+    font-size: calc(1rem + 1vw); /* 字体大小根据视口宽度调整 */
 }
 
 .container ul li.active {
